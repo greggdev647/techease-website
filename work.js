@@ -1,13 +1,14 @@
 // YOUR PORTFOLIO
-// To add a project: put the image in assets/work/ and add a line below.
-// category must be one of: graphics, websites, webapps, mobile, seo
-// link is optional (e.g. a live website you're allowed to show).
-// Items with no image show a "coming soon" tile.
+// To add a project: put the image in assets/work/ and add an entry below.
+//   title:    project name
+//   category: graphics | websites | webapps | mobile | seo
+//   image:    "assets/work/your-file.jpg" (leave "" to show a designed placeholder)
+//   link:     optional live link you're allowed to share
+//   tag:      small label shown on the right (e.g. year or "Concept")
 window.WORK = [
-  { title: "Brand identity", category: "graphics", image: "" },
-  { title: "Social media designs", category: "graphics", image: "" },
-  { title: "Business website", category: "websites", image: "", link: "" },
-  { title: "Booking web app", category: "webapps", image: "" },
-  { title: "Mobile app", category: "mobile", image: "" },
-  { title: "Google ranking growth", category: "seo", image: "" }
+  { title: "Brand Identity", category: "graphics", image: "", tag: "Concept" },
+  { title: "Business Website", category: "websites", image: "", tag: "Concept" },
+  { title: "Operations Dashboard", category: "webapps", image: "", tag: "Concept" },
+  { title: "Booking Mobile App", category: "mobile", image: "", tag: "Concept" },
+  { title: "Local SEO Growth", category: "seo", image: "", tag: "Concept" }
 ];
