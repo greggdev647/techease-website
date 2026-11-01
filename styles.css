@@ -242,6 +242,15 @@ h2 em { color: var(--red-2); }
 .chips input:focus-visible + span { outline: 2px solid var(--red); outline-offset: 2px; }
 .form .btn { justify-self: start; margin-top: .5rem; }
 
+/* WhatsApp */
+.wa-link { color: var(--text); border-bottom: 1px solid var(--red); }
+.wa-link:hover { color: var(--red-2); }
+.wa-fab { position: fixed; right: var(--pad); bottom: 24px; z-index: 90; display: inline-flex; align-items: center; gap: .6rem; height: 56px; padding: 0 1.3rem 0 1rem; border-radius: 999px; background: #25d366; color: #052e16; font-weight: 600; font-size: .95rem; box-shadow: 0 12px 30px -8px rgba(37,211,102,.55); transition: box-shadow .3s; }
+.wa-fab:hover { box-shadow: 0 16px 40px -6px rgba(37,211,102,.8); }
+.wa-fab svg { width: 26px; height: 26px; fill: currentColor; }
+body.is-loading .wa-fab { opacity: 0; }
+@media (max-width: 600px) { .wa-fab { width: 56px; padding: 0; justify-content: center; bottom: 18px; } .wa-fab span { display: none; } }
+
 /* Footer */
 .footer { background: #0b0b0b; padding: 3rem var(--pad) 1.5rem; overflow: hidden; }
 .footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
