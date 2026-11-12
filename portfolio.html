@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Greg Austen | Graphic Designer &amp; Web Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Greg Austen, graphic designer and web developer in Benin City, Nigeria. Logos, brand identity, packaging, social media and print design.">
-  <meta property="og:title" content="Greg Austen | Design Portfolio">
-  <meta property="og:description" content="Logos, packaging, social media and print design by Greg Austen, founder of Tech Ease.">
+  <title>Gregory Omoruyi | Graphic Designer &amp; Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Gregory Omoruyi, graphic designer and web developer in Benin City, Nigeria. Logos, brand identity, packaging, social media and print design.">
+  <meta property="og:title" content="Gregory Omoruyi | Design Portfolio">
+  <meta property="og:description" content="Logos, packaging, social media and print design by Gregory Omoruyi, founder of Tech Ease.">
   <meta property="og:image" content="assets/work/graphics/forage-chicken-pack-front-lg.webp">
   <meta name="theme-color" content="#050505">
   <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     .pf-bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 20px var(--pad); }
-    .pf-bar nav { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: flex-end; }
+    .pf-bar nav { display: flex; gap: .5rem; justify-content: flex-end; }
+    .pf-bar .brand span { white-space: nowrap; }
     .pf-link { display: inline-flex; align-items: center; height: 2.6rem; padding: 0 1.1rem; border-radius: 999px; border: 1px solid var(--line); font-size: .9rem; color: var(--text); transition: background .3s, border-color .3s; }
     .pf-link:hover { background: var(--red); border-color: var(--red); }
     .pf-hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: end; padding: clamp(3rem, 8vw, 7rem) var(--pad) clamp(3rem, 6vw, 5rem); border-bottom: 1px solid var(--line); }
@@ -45,6 +46,7 @@
       .pf-info, .pf-contact dl { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) { .pf-bar nav .pf-hide-sm { display: none; } }
+    @media (max-width: 360px) { .pf-bar .brand span { display: none; } }
     @media print {
       body { background: #fff; color: #111; }
       .pf-bar nav, .gallery-filters, .lightbox, .tile-plus { display: none !important; }
@@ -70,10 +72,10 @@
   <section class="pf-hero">
     <div>
       <p class="label">Portfolio · <span id="pf-year">2026</span></p>
-      <h1>Greg<br><em>Austen</em></h1>
+      <h1>Gregory<br><em>Omoruyi</em></h1>
       <p class="pf-role">Graphic designer and web developer. I design logos, packaging, social media content and print that make businesses look premium, then build the websites to match.</p>
     </div>
-    <div class="pf-photo"><img src="assets/greg.jpg" alt="Greg Austen"></div>
+    <div class="pf-photo"><img src="assets/greg.jpg" alt="Gregory Omoruyi"></div>
   </section>
 
   <section class="pf-info" aria-label="About">
@@ -113,7 +115,7 @@
   </section>
 </main>
 
-<footer class="pf-foot"><span>© <span id="year">2026</span> Greg Austen · Tech Ease</span><span>Click any design to view it full size</span></footer>
+<footer class="pf-foot"><span>© <span id="year">2026</span> Gregory Omoruyi · Tech Ease</span><span>Click any design to view it full size</span></footer>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Design preview" hidden>
   <button class="lb-close" type="button" aria-label="Close">&times;</button>
