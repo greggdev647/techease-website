@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greg Austen | Graphic Designer &amp; Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Greg Austen, graphic designer and web developer in Benin City, Nigeria. Logos, brand identity, packaging, social media and print design.">
+  <meta property="og:title" content="Greg Austen | Design Portfolio">
+  <meta property="og:description" content="Logos, packaging, social media and print design by Greg Austen, founder of Tech Ease.">
+  <meta property="og:image" content="assets/work/graphics/forage-chicken-pack-front-lg.webp">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .pf-bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 20px var(--pad); }
+    .pf-bar nav { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: flex-end; }
+    .pf-link { display: inline-flex; align-items: center; height: 2.6rem; padding: 0 1.1rem; border-radius: 999px; border: 1px solid var(--line); font-size: .9rem; color: var(--text); transition: background .3s, border-color .3s; }
+    .pf-link:hover { background: var(--red); border-color: var(--red); }
+    .pf-hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: end; padding: clamp(3rem, 8vw, 7rem) var(--pad) clamp(3rem, 6vw, 5rem); border-bottom: 1px solid var(--line); }
+    .pf-hero h1 { font-size: clamp(3.4rem, 10vw, 9.5rem); letter-spacing: -.06em; line-height: .88; }
+    .pf-hero h1 em { color: var(--red-2); }
+    .pf-role { margin: 1.5rem 0 0; font-size: clamp(1.2rem, 2vw, 1.6rem); letter-spacing: -.02em; line-height: 1.3; max-width: 30em; }
+    .pf-photo { border-radius: 26px; overflow: hidden; aspect-ratio: 4/5; max-width: 380px; justify-self: end; width: 100%; border: 1px solid var(--line); }
+    .pf-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .pf-info { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 3vw, 3rem); padding: clamp(2.5rem, 5vw, 4rem) var(--pad); border-bottom: 1px solid var(--line); }
+    .pf-info h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 400; margin-bottom: 1rem; }
+    .pf-info p { margin: 0; line-height: 1.55; }
+    .pf-tags { display: flex; flex-wrap: wrap; gap: .45rem; }
+    .pf-tags span { padding: .45rem .85rem; border-radius: 999px; background: #151515; border: 1px solid var(--line); font-size: .88rem; }
+    .pf-contact { padding: clamp(4rem, 9vw, 8rem) var(--pad); border-top: 1px solid var(--line); }
+    .pf-contact h2 { font-size: clamp(2.8rem, 8vw, 7rem); margin-bottom: 2.5rem; }
+    .pf-contact dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 0; }
+    .pf-contact dt { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: .4rem; }
+    .pf-contact dd { margin: 0; font-size: clamp(1.1rem, 1.8vw, 1.5rem); letter-spacing: -.02em; }
+    .pf-contact dd a { border-bottom: 1px solid var(--line); transition: color .3s, border-color .3s; }
+    .pf-contact dd a:hover { color: var(--red-2); border-color: var(--red-2); }
+    .pf-foot { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 1.5rem var(--pad) 2rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
+    @media (max-width: 860px) {
+      .pf-hero { grid-template-columns: 1fr; }
+      .pf-photo { justify-self: start; max-width: 260px; order: -1; }
+      .pf-info, .pf-contact dl { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) { .pf-bar nav .pf-hide-sm { display: none; } }
+    @media print {
+      body { background: #fff; color: #111; }
+      .pf-bar nav, .gallery-filters, .lightbox, .tile-plus { display: none !important; }
+      .tile-cap { opacity: 1; transform: none; position: static; padding: .4rem 0; color: #111; }
+      .tile::after { display: none; }
+      .tile { aspect-ratio: auto; break-inside: avoid; border-color: #ddd; }
+      .tile img { aspect-ratio: 1; height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="pf-bar">
+  <a href="https://techeasebygreg.com" class="brand"><img src="assets/logo-512.png" alt="" width="34" height="34"><span>Tech Ease</span></a>
+  <nav aria-label="Contact">
+    <a class="pf-link" href="#graphics">Work</a>
+    <a class="pf-link pf-hide-sm" href="#contact">Contact</a>
+    <a class="pf-link" href="https://wa.me/2349079453245?text=Hi%20Greg%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+  <section class="pf-hero">
+    <div>
+      <p class="label">Portfolio · <span id="pf-year">2026</span></p>
+      <h1>Greg<br><em>Austen</em></h1>
+      <p class="pf-role">Graphic designer and web developer. I design logos, packaging, social media content and print that make businesses look premium, then build the websites to match.</p>
+    </div>
+    <div class="pf-photo"><img src="assets/greg.jpg" alt="Greg Austen"></div>
+  </section>
+
+  <section class="pf-info" aria-label="About">
+    <div>
+      <h2>About</h2>
+      <p>Founder of Tech Ease, a CAC registered design and technology studio in Benin City, Nigeria. I work directly with clients from the first brief to the final files.</p>
+    </div>
+    <div>
+      <h2>What I do</h2>
+      <div class="pf-tags"><span>Logo &amp; brand identity</span><span>Packaging</span><span>Social media design</span><span>Flyers &amp; print</span><span>Websites</span><span>Web apps</span><span>SEO</span></div>
+    </div>
+    <div>
+      <h2>Based in</h2>
+      <p>Benin City, Edo State, Nigeria.</p>
+    </div>
+  </section>
+
+  <section id="graphics" class="gallery">
+    <div class="gallery-head">
+      <div>
+        <p class="label">Selected work</p>
+        <h2>Design <em>portfolio</em></h2>
+      </div>
+      <div class="gallery-filters" role="group" aria-label="Filter designs" id="gallery-filters"></div>
+    </div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+
+  <section id="contact" class="pf-contact">
+    <p class="label">Contact</p>
+    <h2>Let's <em>talk.</em></h2>
+    <dl>
+      <div><dt>WhatsApp &amp; call</dt><dd><a href="https://wa.me/2349079453245" target="_blank" rel="noopener">+234 907 945 3245</a></dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://instagram.com/ideal_gregg" target="_blank" rel="noopener">@ideal_gregg</a></dd></div>
+      <div><dt>Studio website</dt><dd><a href="https://techeasebygreg.com">techeasebygreg.com</a></dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer class="pf-foot"><span>© <span id="year">2026</span> Greg Austen · Tech Ease</span><span>Click any design to view it full size</span></footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Design preview" hidden>
+  <button class="lb-close" type="button" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous design">&#8592;</button>
+  <figure><img alt=""><figcaption><b></b><span></span></figcaption></figure>
+  <button class="lb-nav lb-next" type="button" aria-label="Next design">&#8594;</button>
+</div>
+
+<script src="work.js"></script>
+<script src="gallery.js"></script>
+<script>
+  var y = new Date().getFullYear();
+  document.getElementById("year").textContent = y;
+  document.getElementById("pf-year").textContent = y;
+</script>
+</body>
+</html>
