@@ -65,7 +65,7 @@
       c.setAttribute("aria-pressed", i === 0);
       var n = t === "All" ? designs.length : designs.filter(function (d) { return d.type === t; }).length;
       c.innerHTML = "<span></span><sup>" + n + "</sup>";
-      c.querySelector("span").textContent = t === "All" ? "All" : t + "s";
+      c.querySelector("span").textContent = t === "All" ? "All" : (t === "Packaging" ? t : t + "s");
       c.addEventListener("click", function () {
         filterBox.querySelectorAll(".chip").forEach(function (x) { x.classList.toggle("is-active", x === c); x.setAttribute("aria-pressed", x === c); });
         grid.querySelectorAll(".tile").forEach(function (tile) { tile.hidden = t !== "All" && tile.dataset.type !== t; });
